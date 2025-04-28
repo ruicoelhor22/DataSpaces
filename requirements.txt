@@ -1,1 +1,7 @@
-
+fitparse 
+pandas 
+matplotlib 
+prefect 
+sqlalchemy 
+psycopg2-binary 
+pyyaml 
