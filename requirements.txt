@@ -5,3 +5,7 @@ prefect
 sqlalchemy 
 psycopg2-binary 
 pyyaml 
+supabase
+boto3
+psycopg2
+python-dotenv
