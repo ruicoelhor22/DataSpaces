@@ -1,5 +1,10 @@
-
 import os
+
+# Create the renamed folder and common.py module
+new_folder = "dataspaces_utils"
+os.makedirs(new_folder, exist_ok=True)
+
+common_code = """import os
 import uuid
 import numpy as np
 import pandas as pd
@@ -23,3 +28,11 @@ def get_s3_client():
 
 # Get bucket name from env
 bucket = os.getenv("SUPABASE_BUCKET")
+"""
+
+# Write the files
+with open(f"{new_folder}/common.py", "w") as f:
+    f.write(common_code)
+
+with open(f"{new_folder}/__init__.py", "w") as f:
+    f.write("# Init file for dataspaces_utils package")
