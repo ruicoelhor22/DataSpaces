@@ -9,3 +9,4 @@ supabase
 boto3
 psycopg2
 python-dotenv
+pyarrow
